@@ -1,0 +1,545 @@
+html {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    
+} 
+body{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 99,5%;
+}
+body a{
+    font-size:large;
+}
+
+nav{
+    position: sticky;
+    top: 0.0%; 
+}
+
+.nav{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+
+    text-align: center;
+
+    list-style: none;
+
+    background-color: #09221e;
+
+    border: 3px solid #43e97b;
+
+    margin: 0%;
+
+    padding: 3% 3%;
+}
+.nav.mobil.navegacion{
+    display: none ;
+}
+.nav.usuario{
+    display: none;
+}
+.nav.descktop{
+    display: none;
+}
+
+.nav.mobil.navegacion.visible,.nav.usuario.visible{
+    display: flex ;
+}
+
+.btn.usuario{
+    display: none;
+}
+
+
+.nav .btn{
+    margin: 20px;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid #38f9d7;
+    border-radius: 90px 90px 90px 90px;
+    color:whitesmoke;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+article h1{
+    display: flex;
+    text-align: center;
+}
+
+/*
+nav ul.ver{
+    visibility: visible;
+    display: flex;
+    background-color: black;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+    height: 35px;
+}
+nav li a {
+    text-decoration: none;
+    background-color:#43e97b;
+    padding: 15%;
+    width: 100%;
+    text-align: center;
+}
+nav  div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 3px solid #43e97b;
+}
+nav div a{
+    color: black;
+    background-color:#43e97b;
+    text-decoration: none;
+    font-size:x-large;
+    text-align: center;
+    padding:1%;
+    margin: 1% 5%;
+    border-radius: 5px;
+}
+nav div a.btn-VerNav.ver{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+nav div a.btn-UsuarioLogueado{
+    display: none;
+    visibility: hidden;
+}
+nav div a.btn-UsuarioLogueado.ver{
+    display: flex;
+    visibility: visible;
+}
+nav div a.btn-VerLogin{
+    visibility: hidden;
+    display: none;
+}
+nav div a.btn-VerLogin.ver{
+    visibility: visible;
+    display: flex;
+}
+nav div a.btn-VerFormularioLogeo.ver{
+    display: flex;
+    visibility: visible;
+}
+nav div a.btn-VerFormularioLogeo{
+    visibility: hidden;
+    display: none;
+}
+nav ul.navLogeo{
+    visibility: hidden;
+    display: none;
+}
+nav ul.navLogeo.ver{
+    visibility: visible;
+    display: flex;
+}
+.navForo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #43e97b;
+    width: 97%;
+    margin: 1%;
+    border: 4px solid black;
+    position: fixed;
+    top: 90%;
+}
+.navForo a{ 
+    background-color: black;
+    padding: 5px;
+    color:#38f9d7;
+}
+*/
+header {
+    background-image: url("/images/fondo.png");
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .titulo{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    color: whitesmoke;
+
+}
+header .barra{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content:space-evenly;
+    border: 3px solid #43e97b;
+}
+header .barra li {
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+header .barra a{
+    border: 2px solid grey; 
+    text-decoration: none;
+    background-color: aqua;
+    padding: 5px;
+    display: flex;
+    border-radius: 45%;
+}
+
+/*///////// SECTION //////////*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    width: 100%;
+    
+}
+/* 
+/////// BOX PRESENTACION ////////
+*/
+section .box-Presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .box-Presentacion h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    margin: 0%;
+}
+section .box-Presentacion ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    margin: 0%;
+    list-style-type:none;
+}
+section .box-Presentacion li{
+    padding: 2%;
+}
+
+/* 
+//////////////////////////////////////////////////////// BOX REGISTRO ////////
+*/
+section .box-Registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+}
+/* 
+/////// BOX INFORMACION ////////
+*/
+section .box-Informacion-Registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    padding: 1%;
+
+}
+section .box-Informacion-Registro h1{
+    padding: 5%;
+    margin: 0%;
+}
+section .box-Informacion-Registro ul{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 1%;
+    margin-top: 0%;
+    width: 100%;
+}
+section .box-Informacion-Registro li{
+    margin-left: 10%;
+}
+section .box-Informacion-Registro .btn-Ver{
+    width: 40%;
+    background-color: rebeccapurple;
+}
+
+/* 
+/////// BOX FORMULARIO REGISTRO ////////*/
+section .box-Overlay.ver{
+    visibility: visible;
+}
+section .box-Overlay{
+    position: fixed;
+    top: 0;
+    left:  0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.4);
+    visibility: hidden ;
+}
+section .box-Registro.ver{
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+}
+section .box-Registro{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    padding: 1.5% 5%;
+
+    border-radius: 15px;
+    background: linear-gradient(45deg, #195a4f, #154c43);
+    box-shadow:  10px -10px 20px #09221e,
+                 -10px 10px 20px #258676;
+
+    transition: .5s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+section form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 10;
+}
+section .boxInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+section .boxInput input{
+    width: 90%;
+    height: 35px;
+}
+/* 
+/////// BOX FORMULARIO LOGUEO ////////*/
+section .box-Logueo.ver{
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+}
+section .box-Logueo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    padding: 1.5% 5%;
+
+    border-radius: 15px;
+    background: linear-gradient(45deg, #195a4f, #154c43);
+    box-shadow:  10px -10px 20px #09221e,
+                 -10px 10px 20px #258676;
+
+    transition: .5s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+} 
+
+/* 
+/////// ARTICULOS ////////
+*/
+article form{
+    display: flex;
+    flex-direction: row;
+}
+
+.boxForo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablaForo{
+    width: 70%;
+}
+
+.bodyTablaForo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trTablaForo{
+    border: 3px solid black;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tdTablaForo{
+    border: 3px solid red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barraComentario{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+footer h1{
+    color: black;
+    border-bottom: 4px solid black;
+}
+
+@media only screen and (min-width: 600px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        border: 5px solid blue;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 45%;
+
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        list-style:circle;
+    }
+    header p {
+        font-size: 150%;
+        font-style: italic;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+    #boxForm-Registro-Logueo{
+        display: flex;
+        flex-direction: row;
+        justify-items: end;
+    }
+
+    #boxForm-Registro-Logueo form.ocultar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #boxForm-Registro-Logueo form.ocultar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0%;
+    }
+    #boxForm-Registro-Logueo form.ocultar ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+    }
+
+
+
+    .ocultar{
+        display: none;
+    }
+
+    .ver{
+        display: flex;
+    }
+
+
+
+    #boxForos {
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boxForos h1{
+        font-size: xx-large;
+        font-style: bold;
+        color:red;
+    }
+
+    #boxForos ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    } 
+    #boxForos li {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        align-content: space-around;
+        justify-content: space-around;
+        width: 30%;
+        margin: 5px;
+    }
+}
+
